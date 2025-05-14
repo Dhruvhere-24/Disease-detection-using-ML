@@ -1,0 +1,12 @@
+To run the application successfully, make sure the trained models are saved in the following structure:
+
+application/
+├── application/                    # Main app code
+├── svm/
+│   └── svm_model.pkl              # Trained SVM model (~5.8 GB)
+└── cnn/
+    └── cnn_disease_model.pth     # Trained CNN model (~8 MB)
+
+Ensure svm_model.pkl and cnn_disease_model.pth are placed exactly in the svm/ and cnn/ folders respectively.
+
+The application will fail to load models if they are missing or incorrectly placed.
